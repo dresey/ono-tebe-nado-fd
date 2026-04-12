@@ -7,12 +7,14 @@ header {
   font-weight: 400;
   font-size: 18px;
 }
+
 .logo {
   margin-left: 37px;
   max-width: 148px;
   height: 105px;
   margin-top: 6px;
 }
+
 .menu-top {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -27,6 +29,7 @@ header {
   display: inline-flex;
   margin-left: 17px;
 }
+
 .menu-top li:not(:last-child)::after {
   content: '';
   width: 6px;
@@ -38,6 +41,7 @@ header {
   margin-left: 9px;
   vertical-align: middle;
 }
+
 .menu-link {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -45,12 +49,13 @@ header {
   font-size: 18px;
   font-weight: 400;
   color: black;
-  transition: opacity 0.3s ease; /* опционально: плавность */
+  transition: opacity 0.3s ease;
 }
 
 .menu-link_active {
   text-decoration: none;
 }
+
 .marker {
   width: 6px;
   height: 6px;
@@ -58,9 +63,11 @@ header {
   border-radius: 50%;
   align-self: center;
 }
+
 li {
   list-style: none;
 }
+
 .address {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -71,6 +78,7 @@ li {
   margin-right: 21px;
   max-width: 318px;
 }
+
 .underline{
   text-decoration: underline;
   font-family: 'Raleway', sans-serif;
@@ -80,6 +88,7 @@ li {
   margin-left: auto;
   text-underline-offset: 4px;
 }
+
 .h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
@@ -87,6 +96,7 @@ li {
   padding: 12px 32px 11px 31px;
   color: white;
 }
+
 /* === Обложка (Cover) === */
 .cover {
   position: relative;
@@ -101,6 +111,7 @@ li {
   margin-bottom: 183px;
   margin-left: 20px;
 }
+
 .cover::before {
   content: '';
   position: absolute;
@@ -111,6 +122,7 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 .cover h1 {
   width: 100%;
   margin: 0;
@@ -123,6 +135,7 @@ li {
   position: relative;
   z-index: 2;
 }
+
 .cover-title__text {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -132,21 +145,26 @@ li {
   width: 100%;
   margin: 0;
 }
+
 .cover-title_left {
   text-align: left;
 }
+
 .cover-title_center {
   text-align: center;
   margin-top: 20px;
 }
+
 .cover-title_right {
   text-align: right;
   margin-top: 20px;
 }
+
 .cover h1 span {
   display: inline-block;
   margin: 0;
 }
+
 .cover .bottom-bar {
   display: flex;
   justify-content: space-between;
@@ -156,6 +174,7 @@ li {
   margin-bottom: 50px;
   text-transform: uppercase;
 }
+
 .cover .subtitle {
   align-items: center;
   word-spacing: 85%;
@@ -165,6 +184,7 @@ li {
   line-height: 28px;
   color: white;
 }
+
 .cover button {
   text-transform: uppercase;
   height: 51px;
@@ -178,12 +198,14 @@ li {
   padding: 12px 32px 11px 31px;
   color: white;
 }
+
 /* === Секция "Лоты" === */
 #lots {
   margin-left: 24px;
   background-color: white;
   margin-bottom: 120px;
 }
+
 #lots h2 { 
   font-family: 'Raleway', sans-serif; 
   font-size: 40px; 
@@ -194,6 +216,7 @@ li {
   line-height: 100%;
   margin-bottom: 30px; 
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -203,6 +226,7 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
 .card {
   position: relative;
   width: 334px;
@@ -213,36 +237,44 @@ li {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card_type_film {
   background-image: url('../images/card-lot-01.jpg');
 }
+
 .card_type_book {
   background-image: url('../images/card-lot-02.jpg');
 }
+
 .card_type_art {
   background-image: url('../images/card-lot-03.jpg');
 }
+
 .card-list { 
   display: flex; 
   flex-wrap: wrap;  
   list-style: none; 
   gap: 9px;
 } 
+
 .card-item { 
   flex: 0 0 334px;
   position: relative; 
   margin-left: 17px;
 } 
+
 .card-item a { 
   text-decoration: none; 
   display: block; 
   flex: 0 0 334px; 
 } 
+
 .card-item article { 
   position: relative; 
   overflow: hidden; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 } 
+
 .card-item img { 
   width: 334px; 
   height: 596px; 
@@ -250,6 +282,7 @@ li {
   display: block;
   margin-right: 25px; 
 } 
+
 .card-overlay { 
   position: absolute; 
   top: 0; 
@@ -260,8 +293,9 @@ li {
   color: white; 
   z-index: 2; 
 } 
+
 .card-text { 
-position: absolute;
+  position: absolute;
   top: 48px; 
   left: 40px; 
   right: 40px; 
@@ -276,6 +310,7 @@ position: absolute;
   letter-spacing: 0.2em;  
   font-family: 'Raleway', sans-serif; 
 }
+
 .card-text h3 { 
   font-family: 'Raleway', sans-serif; 
   font-size: 22px; 
@@ -288,6 +323,7 @@ position: absolute;
   text-transform: uppercase;
   text-decoration-offset: 4px; 
 } 
+
 .card-text p { 
   font-family: 'Raleway', sans-serif; 
   font-size: 20px; 
@@ -297,11 +333,13 @@ position: absolute;
   line-height: normal; 
   color: white; 
 }
+
 /* === Ссылка "Посмотреть ещё" === */
 .see-more {
   margin: 30px 102px 0 40px;
   text-align: left;
 }
+
 .see-more a {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -311,6 +349,7 @@ position: absolute;
   text-underline-offset: 3px;
   margin-left: 16px;
 }
+
 /* === Секция "Об Аукционе" === */
 #about {
   margin-bottom: 180px;
@@ -322,6 +361,7 @@ position: absolute;
   color: #000;
   padding-top: 0;
 }
+
 .about-logo {
   flex: 0 0 240px;
   width: 240px;
@@ -335,16 +375,19 @@ position: absolute;
   justify-content: center;
   overflow: hidden;
 }
+
 .about-logo img {
   max-width: 148px;
   max-height: 114px;
 }
+
 .about-content {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin-top: 133px;
 }
+
 .about-content h2 {
   font-size: 40px;
   font-weight: 700;
@@ -352,18 +395,21 @@ position: absolute;
   margin: 0 0 100px 0;
   color: #000;
 }
+
 .about-text p {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   color: #000;
 }
+
 .about-text{
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 688px;
 }
+
 /* === Подвал === */
 footer {
   background-color: white;
@@ -375,11 +421,13 @@ footer {
   font-size: 18px;
   margin: 180px 32px 82px 65px;
 }
+
 footer .footer-address,
 footer .footer-nav,
 footer .social-links {
   flex: 1;
 }
+
 footer .footer-address li {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -387,6 +435,7 @@ footer .footer-address li {
   margin-left: 50px;
   text-underline-offset: 4px;
 }
+
 footer .footer-nav a {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -395,23 +444,28 @@ footer .footer-nav a {
   letter-spacing: 0;
   color: black;
 }
+
 footer .social-links a {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: black;
   text-underline-offset: 4px;
 }
+
 footer .footer-nav {
   text-align: center;
 }
+
 footer .footer-nav a {
   margin: 0 15px;
 }
+
 footer .social-links {
   text-align: right;
   width: 48px;
   height: 48px;
 }
+
 .social-links ul {
   display: flex;
   gap: 48px;
