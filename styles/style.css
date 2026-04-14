@@ -1,6 +1,6 @@
 /* === Шапка === */
 header {
-  margin: 86px 50px 92px 50px;
+  margin: 86px 50px 92px 31px;
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
@@ -22,7 +22,7 @@ header {
   line-height: 100%;
   letter-spacing: 0;
   display: flex;
-  gap: 11px;
+  gap: 14px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -56,14 +56,6 @@ header {
   text-decoration: none;
 }
 
-.marker {
-  width: 6px;
-  height: 6px;
-  background-color: #000;
-  border-radius: 50%;
-  align-self: center;
-}
-
 li {
   list-style: none;
 }
@@ -75,8 +67,9 @@ li {
   line-height: 24px;
   letter-spacing: 0;
   margin-left: auto;
-  margin-right: 21px;
+  margin-right: 39px;
   max-width: 318px;
+  font-style: normal;
 }
 
 .underline{
@@ -107,20 +100,8 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -2;
   margin-bottom: 183px;
-  margin-left: 20px;
-}
-
-.cover::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  margin-left: -2px;
 }
 
 .cover h1 {
@@ -129,7 +110,7 @@ li {
   font-size: 100px;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
-  padding: 158px 23px 98px 50px;
+  padding: 156px 21px 98px 50px;
   text-transform: uppercase;
   color: white;
   position: relative;
@@ -169,10 +150,12 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 47px;
-  margin-right: 53px;
+  margin-left: 49px;
+  margin-right: 51px;
   margin-bottom: 50px;
   text-transform: uppercase;
+  z-index: 2;
+  position: relative;
 }
 
 .cover .subtitle {
@@ -199,6 +182,17 @@ li {
   color: white;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none; 
+}
+
 /* === Секция "Лоты" === */
 #lots {
   margin-left: 24px;
@@ -211,31 +205,23 @@ li {
   font-size: 40px; 
   font-weight: 700; 
   color: #000; 
-  padding-left: 58px;
+  padding-left: 37px;
   text-transform: uppercase;
   line-height: 100%;
   margin-bottom: 30px; 
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
 .card {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_type_film {
@@ -254,13 +240,14 @@ li {
   display: flex; 
   flex-wrap: wrap;  
   list-style: none; 
-  gap: 9px;
+  gap: 26px;
 } 
 
 .card-item { 
   flex: 0 0 334px;
   position: relative; 
-  margin-left: 17px;
+  margin-left: -2px;
+  padding: 0;
 } 
 
 .card-item a { 
@@ -275,31 +262,8 @@ li {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 } 
 
-.card-item img { 
-  width: 334px; 
-  height: 596px; 
-  object-fit: cover; 
-  display: block;
-  margin-right: 25px; 
-} 
-
-.card-overlay { 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 334px; 
-  min-height: 596px;
-  background-color: rgba(0, 0, 0, 0.5); 
-  color: white; 
-  z-index: 2; 
-} 
-
 .card-text { 
-  position: absolute;
-  top: 48px; 
-  left: 40px; 
-  right: 40px; 
-  bottom: 48px; 
+  padding: 48px 40px 48px 40px;
   display: flex; 
   flex-direction: column; 
   justify-content: space-between; 
@@ -309,6 +273,8 @@ li {
   line-height: 1.2; 
   letter-spacing: 0.2em;  
   font-family: 'Raleway', sans-serif; 
+  flex: 1;
+  z-index: 2;
 }
 
 .card-text h3 { 
@@ -336,7 +302,7 @@ li {
 
 /* === Ссылка "Посмотреть ещё" === */
 .see-more {
-  margin: 30px 102px 0 40px;
+  margin: 31px 102px 0 22px;
   text-align: left;
 }
 
@@ -368,7 +334,7 @@ li {
   height: 240px;
   border-radius: 50%;
   margin-top: 34px;
-  margin-left: 88px;
+  margin-left: 68px;
   background-color: black;
   display: flex;
   align-items: center;
@@ -419,7 +385,7 @@ footer {
   color: #000;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  margin: 180px 32px 82px 65px;
+  margin: 183px 53px 82px 47px;
 }
 
 footer .footer-address,
@@ -443,6 +409,7 @@ footer .footer-nav a {
   line-height: 100%;
   letter-spacing: 0;
   color: black;
+  padding-right: 34px;
 }
 
 footer .social-links a {
